@@ -469,13 +469,13 @@ int System::GetTrackingState()
 {
     unique_lock<mutex> lock(mMutexState);
     return mTrackingState;
-}
+}//得到追踪状态
 
 vector<MapPoint*> System::GetTrackedMapPoints()
 {
     unique_lock<mutex> lock(mMutexState);
     return mTrackedMapPoints;
-}
+}//获取地图点
 
 vector<cv::KeyPoint> System::GetTrackedKeyPointsUn()
 {
